@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money to a Prisoner</title>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <div class="header-content container">
+            <h1>GOV.UK</h1>
+            <h5>Send money to a prisoner</h5>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2>Who are you sending money to?</h2>
+        <section class="details">
+            <div class="form">
+                <h3>Prisoner details</h3>
+                <label for="name">Prisoner name</label> <br />
+                <input type="text" name="name" required>
+
+                <br><br>
+
+                <h3>Prisoner email address</h3>
+                <label for="email">So we can send you a receipt</label> <br />
+                <input type="email" name="email" required>
+
+                <br><br>
+
+                <h3>How much are you sending?</h3>
+                <div class="service-charge">
+                    <span>£</span><input type="number" required class="service-data" id="data">
+                </div>
+
+                <br>
+
+                <h4>Service charge:</h4>
+                <p class="gray-text">The service charge is 2.4% of the amount you're sending, plus 20p. This fee is charged by your card provider.</p>
+
+                <br><br>
+
+                <div class="total" id="total">
+                    <h3>Total to pay: <span class="sumTotal"></span></h3>
+                    <small class="charge-to-pay"></small>
+                </div>
+
+                <br><br>
+
+                <button type="submit">Continue</button>
+            </div>
+            <div class="text-content">
+                <h3>Courts, sentencing and tribunals</h3>
+                <a href="#">Criminal courts</a>
+                <a href="#">How sentences are worked out</a>
+                <a href="#"><strong>More</strong></a>
+                <br>
+
+                <h3>Crime, justice and the law</h3>
+                <a href="#">Types of prison sentences</a>
+                <a href="#"><strong>More</strong></a>
+            </div>
+        </section>
+        </div>
+    </main>
+    <br><br>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

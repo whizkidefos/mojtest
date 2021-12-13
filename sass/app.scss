@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+$primary-color: #0B0C0C;
+$secondary-color: #1D70B8;
+
+// Global/ Utilities
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    border: 0;
+    background: $secondary-color;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 300ms;
+
+    &:hover {
+        background: $primary-color;
+    }
+}
+
+a {
+    color: $secondary-color;
+    transition: 200ms;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #999;
+    display: block;
+}
+
+input[type="text"], input[type="email"] {
+    height: 35px;
+    width: 100%;
+    padding-left: 10px;
+}
+.gray-text {
+    color: #999;
+}
+
+.service-charge {
+    display: flex;
+    align-items: center;
+    border: 1px solid $primary-color;
+    height: 35px;
+    width: 30%;
+
+    input[type="number"] {
+        border: 0;
+        height: 100%;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    span {
+        background: lightgray;
+        border-right: 1px solid $primary-color;
+        font-weight: bold;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+// Header
+header {
+    background: $primary-color;
+    border-bottom: 5px solid $secondary-color;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// Main
+main {
+    margin-top: 3rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+
+    .form {
+        width: calc(60% - 30px);
+    }
+
+    .text-content {
+        border-top: 5px solid $secondary-color;
+        padding-top: 1rem;
+        width: calc(40% - 30px);
+
+        a {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .details {
+        flex-direction: column;
+
+        .form, .text-content {
+            width: 100%;
+        }
+
+        .text-content {
+            margin-top: 3rem;
+        }
+    }
+}
