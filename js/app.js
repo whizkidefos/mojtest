@@ -8,6 +8,6 @@ document.querySelector('#data').addEventListener('keyup', function(e) {
     let totalToPay = (this.value - 0) + toPay;
     total.innerHTML = `£${totalToPay.toFixed(2)}`;
     
-    chargeToPay.innerText = `Total service charge for this transcaction is: £${toPay.toFixed(2)}`;
+    chargeToPay.innerHTML = `Total service charge for this transaction is: <b>£${toPay.toFixed(2)}</b>`;
 
 });
